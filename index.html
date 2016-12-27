@@ -193,12 +193,37 @@
                 stroke: {color: 'darkblue', width: '1px'}
             };
 
-            var canyon_entrance1 = {
-                title: "A canyon entrance",
-                center: [-589, -132],
-                radius: 15,
-                fill: "yellow",
-                stroke: {color: 'red', width: '2px'}
+            var canyon_entrance1_route = {
+                waypoints: [
+                    [-589, -132],
+                    [-627, -136],
+                ],
+                route: [
+                    [-589, -132],
+                    [-605, -122],
+                    [-627, -136],
+                    [-638, -124],
+                    [-648, -122],
+
+                ],
+                waypointRadius: 10,
+                waypointFill: "yellow",
+                waypointStroke: {color: 'red', width: '1px'},
+                routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
+            };
+            var canyon_entrance1_route2 = {
+                waypoints: [
+                ],
+                route: [
+                    [-627, -136],
+                    [-630, -145],
+                    [-645, -143],
+                    [-674, -154],
+                ],
+                waypointRadius: 10,
+                waypointFill: "yellow",
+                waypointStroke: {color: 'red', width: '1px'},
+                routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
             };
 
             var box_canyon_route1 = {
@@ -283,7 +308,8 @@
                 //drawCircle(svg, iits_lake);
                 drawPath(svg, iits_lake_outline);
                 drawCircle(svg, cactus_lake);
-                drawCircle(svg, canyon_entrance1);
+                drawRoute(svg, canyon_entrance1_route2);
+                drawRoute(svg, canyon_entrance1_route);
                 drawRoute(svg, box_canyon_route1);
                 drawRoute(svg, iits_route1);
                 drawRoute(svg, cactus_to_canyon);

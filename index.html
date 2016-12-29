@@ -26,28 +26,129 @@
                 [-51, -516],
                 [680, 90],
                 [164, 582],
+                [-557, 152],
+                [-360, 120],
             ];
+
+            var coast_points = [
+                [-378, -786],
+                [748, -665],
+            ];
+
+            var coast1 = {
+                world_coords: [
+                    [611, 670],
+                    [610, 710],
+                    [584, 713],
+                    [569, 714],
+                    [547, 729],
+                    [557, 735],
+                    [529, 748],
+                    [499, 749],
+                    [475, 749],
+                    [455, 741],
+                ],
+                fill: "none",
+                stroke: {color: 'darkblue', width: '2px'}
+            };
 
             var redwood_lake = {
                 title: "Redwood Lake",
-                center: [-318, 271],
-                radius: 20,
+                world_coords: [
+                    [-324, 264],
+                    [-317, 265],
+                    [-314, 272],
+                    [-315, 274],
+                    [-320, 273],
+                    [-324, 268],
+                    [-324, 264],
+                ],
                 fill: "skyblue",
                 stroke: {color: 'darkblue', width: '1px'}
             };
 
-            var swamp_lake = {
+
+            var redwood_cliff3 = {
+                world_coords: [
+                    [-297, -10],
+                    [-289, 22],
+                    [-293, 82],
+                    [-297, 103],
+                    [-316, 121],
+                    [-319, 117],
+                ],
+                fill: "none",
+                stroke: {color: 'gray', width: '1px'}
+            };
+
+            var swamp_lake2 = {
                 title: "Swamp Lake",
-                center: [-440, -50],
-                radius: 25,
+                world_coords: [
+                    [-445, -39],
+                    [-450, -39],
+                    [-451, -41],
+                    [-451, -44],
+                    [-446, -46],
+                    [-451, -49],
+                    [-445, -62],
+                    [-441, -46],
+                    [-445, -39],
+                    [-450, -39],
+                ],
+                fill: "skyblue",
+                stroke: {color: 'darkblue', width: '1px'}
+            };
+
+            var big_lake = {
+                title: "Big Lake",
+                world_coords: [
+                    [-574, 129],
+                    [-575, 132],
+                    [-569, 143],
+                    [-574, 147],
+                    [-577, 153],
+                    [-582, 155],
+                    [-585, 154],
+                    [-590, 151],
+                    [-593, 148],
+                    [-595, 144],
+                    [-595, 141],
+                    [-591, 136],
+                    [-586, 133],
+                    [-582, 141],
+                    [-578, 130],
+                ],
                 fill: "skyblue",
                 stroke: {color: 'darkblue', width: '1px'}
             };
 
             var box_lake = {
                 title: "Box Lake",
-                center: [135, -415],
-                radius: 25,
+                world_coords: [
+                    [148, -429],
+                    [150, -432],
+                    [150, -436],
+                    [147, -440],
+                    [145, -441],
+                    [142, -446],
+                    [138, -447],
+                    [135, -447],
+                    [133, -445],
+                    [132, -443],
+                    [131, -438],
+                    [133, -433],
+                    [137, -429],
+                    [141, -428],
+                    [144, -428],
+                    [148, -429],
+                ],
+                fill: "skyblue",
+                stroke: {color: 'darkblue', width: '1px'}
+            };
+            var iits_lake_outline = {
+                title: "Box Lake",
+                world_coords: [
+                ],
                 fill: "skyblue",
                 stroke: {color: 'darkblue', width: '1px'}
             };
@@ -58,6 +159,23 @@
                 radius: 25,
                 fill: "skyblue",
                 stroke: {color: 'darkblue', width: '1px'}
+            };
+
+            var scrubby_lake = {
+                title: "some scrubby lake",
+                world_coords: [
+                    [547, 650],
+                    [546, 652],
+                    [545, 651],
+                    [544, 650],
+                    [544, 648],
+                    [545, 647],
+                    [547, 649],
+                    [547, 650],
+                ],
+                fill: "skyblue",
+                stroke: {color: 'darkblue', width: '1px'}
+
             };
 
             var iits_lake = {
@@ -86,10 +204,37 @@
 
             var redwood_outline = {
                 world_coords: [
-                    [126, -276],
-                    [128, -345],
-                    [130, -412], 
                     [135, -415], 
+                    [130, -412], 
+                    [128, -345],
+                    [126, -276],
+                    [121, -186],
+                    [134, -185],
+                    [132, -172],
+                    [135, -161],
+                    [146, -136],
+                    [177, -97],
+                    [183, -86],
+                    [194, -74],
+                    [202, -64],
+                    [200, -54],
+                    [205, -48],
+                    [224, -32],
+                    [224, -25],
+                    [237, -22],
+                    [244, -10],
+                    [240, 0],
+                    [264, 0],
+                    [274, -3],
+                    [282, -6],
+                    [287, -5],
+                    [301, 0],
+                    [364, 0],
+                    [402, -1],
+                    [410, -8],
+                    [408, -46],
+                    [403, -54],
+                    [401, -62],
                 ],
                 fill: "none",
                 stroke: {color: 'darkgreen', width: '1px'}
@@ -147,6 +292,38 @@
                     [444, -314],
                     [445, -325],
                     [467, -337],
+                    [481, -334],
+                    [481, -325],
+                    [483, -324],
+                    [487, -325],
+                    [492, -332],
+                    [501, -335],
+                    [522, -360],
+                    [524, -363],
+                    [523, -368],
+                    [518, -377],
+                    [510, -425],
+                    [489, -432],
+                    [437, -460],
+                    [429, -464],
+                    [421, -473],
+                    [417, -488],
+                    [400, -506],
+                    [384, -511],
+                    [375, -520],
+                    [368, -523],
+                    [363, -535],
+                    [366, -552],
+                    [369, -564],
+                    [366, -579],
+                    [348, -609],
+                    [332, -612],
+                    [323, -608],
+                    [290, -615],
+                    [279, -612],
+                    [262, -617],
+                    [237, -613],
+                    [223, -617],
                 ],
                 fill: "none",
                 stroke: {color: 'gray', width: '1px'}
@@ -193,6 +370,127 @@
                 stroke: {color: 'darkblue', width: '1px'}
             };
 
+            var cypress_outline = {
+                world_coords: [
+                    [-15, 417],
+                    [-32, 466],
+                    [-63, 474],
+                    [-97, 478],
+                    [-126, 477],
+                    [-196, 478],
+                    [-218, 452],
+                    [-214, 444],
+                    [-203, 440],
+                    [-209, 437],
+                    [-213, 419],
+                    [-210, 408],
+                    [-221, 401],
+                    [-200, 389],
+                    [-195, 375],
+                    [-193, 359],
+                    [-206, 329],
+                    [-185, 327],
+                    [-177, 333],
+                    [-172, 327],
+                    [-154, 334],
+                    [-140, 335],
+                    [-135, 343],
+                    [-127, 346],
+                    [-119, 341],
+                    [-79, 347],
+                    [-58, 350],
+                    [-31, 367],
+                    [-17, 386],
+                    [-15, 417],
+                ],
+                fill: "none",
+                stroke: {color: 'darkgreen', width: '1px'}
+            };
+
+            var cypress_lake = {
+                title: "Cypress Lake",
+                world_coords: [
+                    [-68, 440],
+                    [-80, 443],
+                    [-77, 430],
+                    [-86, 429],
+                    [-96, 423],
+                    [-101, 422],
+                    [-103, 418],
+                    [-103, 411],
+                    [-116, 402],
+                    [-121, 395],
+                    [-118, 387],
+                    [-119, 380],
+                    [-128, 364],
+                    [-128, 360],
+                    [-139, 353],
+                    [-144, 349],
+                    [-149, 350],
+                    [-152, 358],
+                    [-141, 363],
+                    [-129, 378],
+                    [-128, 400],
+                    [-131, 408],
+                    [-120, 410],
+                    [-110, 416],
+                    [-106, 428],
+                    [-102, 431],
+                    [-95, 431],
+                    [-68, 440],
+                ],
+                fill: "skyblue",
+                stroke: {color: 'darkblue', width: '1px'}
+            };
+
+            var some_other_lake = {
+                title: "Noname Lake",
+                world_coords: [
+                    [717, -651],
+                    [714, -647],
+                    [717, -645],
+                    [717, -643],
+                    [721, -641],
+                    [721, -639],
+                    [718, -637],
+                    [722, -636],
+                    [723, -632],
+                    [721, -630],
+                    [719, -631],
+                    [717, -628],
+                    [716, -628],
+                    [713, -631],
+                    [711, -639],
+                    [712, -642],
+                    [709, -645],
+                    [707, -647],
+                    [707, -650],
+                    [711, -652],
+                    [715, -653],
+                    [717, -651],
+                ],
+                fill: "skyblue",
+                stroke: {color: 'darkblue', width: '1px'}
+            };
+
+            var redwood_entrance4_route = {
+                waypoints: [
+                    [397, -72],
+                    [418, -61],
+                ],
+                route: [
+                    [397, -72],
+                    [407, -66],
+                    [409, -64],
+                    [418, -61],
+                ],
+                waypointRadius: 5,
+                waypointFill: "yellow",
+                waypointStroke: {color: 'red', width: '1px'},
+                routeStroke: {color: 'red', width: '1px', 'dasharray': '2,3'},
+
+            }
+
             var canyon_entrance1_route = {
                 waypoints: [
                     [-589, -132],
@@ -206,7 +504,7 @@
                     [-648, -122],
 
                 ],
-                waypointRadius: 10,
+                waypointRadius: 5,
                 waypointFill: "yellow",
                 waypointStroke: {color: 'red', width: '1px'},
                 routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
@@ -236,7 +534,10 @@
                     [-108, -335],
                     [-5, -429],
                     [54, -445],
-                    [135, -415],
+                    [63, -453],
+                    [86, -471],
+                    [131, -464],
+                    [140, -435],
                 ],
                 waypointRadius: 10,
                 waypointFill: "yellow",
@@ -250,6 +551,42 @@
                 ],
                 route: [
                     [450, 0],
+                ],
+                waypointRadius: 10,
+                waypointFill: "yellow",
+                waypointStroke: {color: 'red', width: '1px'},
+                routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
+            };
+
+            var box_canyon3 = {
+                waypoints: [
+                    [307, -172],
+                ],
+                route: [
+                    [153, -445],
+                    [195, -419],
+                    [209, -396],
+                    [208, -330],
+                    [231, -300],
+                    [240, -259],
+                    [246, -247],
+                    [241, -200],
+                    [252, -188],
+                    [263, -187],
+                    [276, -175],
+                    [307, -172],
+                    [345, -225],
+                    [332, -248],
+                    [328, -275],
+                    [316, -307],
+                    [284, -322],
+                    [282, -335],
+                    [294, -348],
+                    [294, -366],
+                    [366, -360],
+                    [380, -332],
+                    [411, -324],
+                    [425, -336],
                 ],
                 waypointRadius: 10,
                 waypointFill: "yellow",
@@ -273,9 +610,86 @@
                 routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
             };
 
+            var cactus_to_canyon2 = {
+                waypoints: [
+                    [153, -445],
+                    [357, -526],
+                    [55, -562],
+                ],
+                route: [
+                    [153, -445],
+                    [219, -512],
+                    [247, -530],
+                    [293, -531],
+                    [306, -513],
+                    [357, -526],
+                    [353, -542],
+                    [362, -559],
+                    [359, -586],
+                    [344, -600],
+                    [325, -601],
+                    [298, -610],
+                    [273, -606],
+                    [253, -609],
+                    [241, -606],
+                    [218, -612],
+                    [202, -612],
+                    [193, -602],
+                    [150, -601],
+                    [136, -605],
+                    [119, -604],
+                    [83, -576],
+                    [55, -562],
+                ],
+                waypointRadius: 10,
+                waypointFill: "yellow",
+                waypointStroke: {color: 'red', width: '1px'},
+                routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
+            };
+
+            var oakwoods_to_pinewoods = {
+                waypoints: [
+                    [-455, -193],
+                    [-465, -174],
+                ],
+                route: [
+                    [-455, -193],
+                    [-457, -185],
+                    [-465, -174],
+                ],
+                waypointRadius: 5,
+                waypointFill: "yellow",
+                waypointStroke: {color: 'red', width: '1px'},
+                routeStroke: {color: 'red', width: '1px', 'dasharray': '2,3'},
+            };
+
+            var volcano_canyon1 = {
+                waypoints: [
+                    [7, -231],
+                    [36, -186],
+                    [35, -136],
+                ],
+                route: [
+                    //[46, -180],
+                    //[33, -190],
+                    //[12, -221],
+                    [9, -268],
+                    [7, -231],
+                    [36, -186],
+                    [35, -136],
+                    [19, -123],
+                    [19, -103],
+                    [22, -85],
+                ],
+                waypointRadius: 5,
+                waypointFill: "yellow",
+                waypointStroke: {color: 'blue', width: '1px'},
+                routeStroke: {color: 'blue', width: '1px', 'dasharray': '5,10'},
+            };
+
         </script>
         <script type='text/javascript'>
-            var WIDTH = 1500;
+            var WIDTH = 1600;
 
             function world2raw(x, y) {
                 if(Array.isArray(x)) {
@@ -302,22 +716,40 @@
                 drawPath(svg, redwood_canyon_outline);
                 drawPath(svg, redwood_canyon2_outline);
                 drawPath(svg, boiling_lake_outline);
-                drawCircle(svg, redwood_lake);
-                drawCircle(svg, swamp_lake);
-                drawCircle(svg, box_lake);
+                drawPath(svg, some_other_lake);
+                drawPath(svg, cypress_outline);
+                drawPath(svg, scrubby_lake);
+                drawPath(svg, cypress_lake);
+                drawPath(svg, redwood_lake);
+                drawPath(svg, redwood_cliff3);
+                //drawCircle(svg, swamp_lake);
+                drawPath(svg, swamp_lake2);
+                drawPath(svg, big_lake);
                 //drawCircle(svg, iits_lake);
                 drawPath(svg, iits_lake_outline);
                 drawCircle(svg, cactus_lake);
                 drawRoute(svg, canyon_entrance1_route2);
                 drawRoute(svg, canyon_entrance1_route);
                 drawRoute(svg, box_canyon_route1);
+                drawRoute(svg, box_canyon3);
+                drawPath(svg, box_lake);
                 drawRoute(svg, iits_route1);
                 drawRoute(svg, cactus_to_canyon);
+                drawRoute(svg, cactus_to_canyon2);
+                drawRoute(svg, redwood_entrance4_route);
+                drawRoute(svg, volcano_canyon1);
+                drawRoute(svg, oakwoods_to_pinewoods);
 
 
+                drawPath(svg, coast1);
+                coast_points.forEach(function(pt) {
+                    var xy, circle;
+                    xy = world2raw(pt);
+                    circle = svg.circle(5).center(xy[0], xy[1]).fill('darkblue');
+                });
                 /*
                 var xy, circle;
-                xy = world2raw(100, 0);
+                xy = world2raw(748, -665);
                 circle = svg.circle(10).center(xy[0], xy[1]).fill('red');
 
                 xy = world2raw(0, 100);
@@ -332,7 +764,6 @@
                 var routeCoords = route.route.map(world2raw);
                 svg.polyline(routeCoords).stroke(route.routeStroke).fill('none');
                 route.waypoints.forEach(function(waypoint) { 
-                    console.info("waypoint: ", waypoint);
                     var cpt = world2raw(waypoint);
                     var group = svg.group();
                     group.element('title').words("" + waypoint[0] + " " + waypoint[1]);

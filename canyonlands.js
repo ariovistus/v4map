@@ -1,6 +1,6 @@
 
 var box_lake = {
-    title: "Box Lake",
+    title: "Canyon Lake",
     world_coords: [
         [148, -429],
         [150, -432],
@@ -24,9 +24,23 @@ var box_lake = {
 };
 
 var cactus_lake = {
-    title: "Cactus Lake",
-    center: [-50, -515],
-    radius: 25,
+    title: "Deep Lake",
+    world_coords: [
+        [-46, -522],
+        [-44, -522],
+        [-42, -520],
+        [-37, -519],
+        [-31, -529],
+        [-34, -531],
+        [-38, -529],
+        [-38, -536],
+        [-43, -535],
+        [-46, -536],
+        [-48, -539],
+        [-52, -539],
+        [-48, -536],
+
+    ],
     fill: "skyblue",
     stroke: {color: 'darkblue', width: '1px'}
 };
@@ -300,6 +314,71 @@ var box_canyon3 = {
     routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
 };
 
+var redwood_cliff_passage = {
+    waypoints: [
+        [429, -74],
+        [415, -95],
+    ],
+    route: [
+        [429, -74],
+        [415, -95],
+    ],
+    waypointRadius: 5,
+    waypointFill: "yellow",
+    waypointStroke: {color: 'red', width: '1px'},
+    routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
+};
+
+var redwood_route1 = {
+    waypoints: [
+        [429, -74],
+        [415, -95],
+    ],
+    route: [
+        [429, -74],
+        [415, -95],
+    ],
+    waypointRadius: 5,
+    waypointFill: "yellow",
+    waypointStroke: {color: 'red', width: '1px'},
+    routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
+};
+
+var redwood_route2 = {
+    waypoints: [
+    ],
+    route: [
+        [443, -36],
+        [429, -74],
+        [419, -135],
+        [411, -146],
+        [400, -149],
+        [379, -150],
+        [362, -159],
+        [307, -172],
+    ],
+    waypointRadius: 5,
+    waypointFill: "yellow",
+    waypointStroke: {color: 'red', width: '1px'},
+    routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
+};
+
+var redwood_route3 = {
+    waypoints: [
+        [456, -80],
+        [443, -36],
+    ],
+    route: [
+        [456, -80],
+        [460, -71],
+        [443, -36],
+    ],
+    waypointRadius: 5,
+    waypointFill: "yellow",
+    waypointStroke: {color: 'red', width: '1px'},
+    routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
+};
+
 var cactus_to_canyon = {
     waypoints: [
         [-34, -472],
@@ -386,9 +465,13 @@ var implied_canyontop = {
         [193, -328],
         [215, -296],
         [229, -249],
-        [229, -194],
+        [236, -194], // real data
         [297, -154],
         [363, -145],
+        [410, -127],
+        [415, -95],
+        [415, -95],
+        [400, -60],
     ],
     fill: "none",
     stroke: {color: 'magenta', width: '1px'}
@@ -413,4 +496,27 @@ var implied_canyontop2 = {
     ],
     fill: "none",
     stroke: {color: 'magenta', width: '1px'}
+};
+
+var iits_cliff2 = {
+    world_coords: [
+        [392, -156],
+        [416, -151],
+        [428, -136],
+        [429, -122],
+        [448, -70],
+        [454, -67],
+        [460, -72],
+        [457, -81],
+        [463, -73],
+        [462, -65],
+        [465, -57],
+        [472, -33],
+        [479, -26],
+        [494, 4],
+        [497, -14],
+
+    ],
+    fill: "none",
+    stroke: {color: 'gray', width: '1px'}
 };

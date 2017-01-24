@@ -10,6 +10,13 @@
                 color: white;
             }
 
+            .compass {
+                position: fixed;
+                width: 160px;
+                height: 160px;
+                z-index: 1000;
+            }
+
             body {
                 background-color: #9db9f9;
             }
@@ -239,11 +246,13 @@
                     circle = svg.circle(10).center(xy[0], xy[1]).fill('lightblue').stroke({color: 'darkgreen'});
                 });
 
-                drawCompass(svg);
+                var svg2 = SVG('compass').size(160, 160);
+                drawCompass(svg2);
 
                 var canvas = document.getElementById("canvas1");
 
                 canvas.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('keydown', toggleCompass);
             }
 
             function drawRoute(svg, route) {
@@ -288,13 +297,13 @@
                 var radius = 160;
                 var rect = svg.rect(radius, radius)
                     .fill('white')
-                    .move(WIDTH-10-radius, 10)
+                    //.move(WIDTH-10-radius, 10)
                     .stroke(stroke1);
                 var makeArrow = function() {
                     return svg.polyline([[0, 5],[5, 5],[2, 20], [0, 5]]).fill('none').stroke(stroke1);   
                 }
-                var cx = WIDTH-10-radius/2;
-                var cy = 10 + radius/2;
+                var cx = radius/2;
+                var cy = radius/2;
                 for(var i = 0; i < 360; i+=90) {
                     var arrow = makeArrow();
                     arrow.move(cx-2, cy+10).rotate(i, cx, cy);
@@ -346,6 +355,18 @@
                 var box = elt.getBoundingClientRect()
                 return { top: box.top + window.pageYOffset, left: box.left + window.pageXOffset};
             }
+
+            function toggleCompass(_event) {
+                var compass = document.getElementById("compass");
+                if(_event.key == "c") {
+                    if(compass.parentNode.style.display == "none") {
+                        compass.parentNode.style.display = "";
+                    }else{
+                        compass.parentNode.style.display = "none";
+                    }
+                }
+
+            }
         </script>
 	</head>
     <body onload='start()'>
@@ -354,7 +375,11 @@
         </pre>
         <div id='xyreporter' class='coord-display'>
         </div>
-        <div id='canvas1'>
+        <div style='float:right; width:160px;'>
+            <div id='compass' class='compass'>
+            </div>
+        </div>
+        <div id='canvas1' >
         </div>
     </body>
 </html>

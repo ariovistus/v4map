@@ -1,5 +1,5 @@
 
-var box_lake = {
+var canyon_lake = {
     title: "Canyon Lake",
     world_coords: [
         [148, -429],
@@ -519,4 +519,48 @@ var iits_cliff2 = {
     ],
     fill: "none",
     stroke: {color: 'gray', width: '1px'}
+};
+
+var a_route = {
+    waypoints: [
+        [529, -210],
+        [677, -85],
+    ],
+    route: [
+        [529, -210],
+        [546, -182],
+        [616, -134],
+        [677, -85],
+    ],
+    waypointRadius: 10,
+    waypointFill: "yellow",
+    waypointStroke: {color: 'red', width: '1px'},
+    routeStroke: {color: 'red', width: '1px', 'dasharray': '5,10'},
+};
+
+var iits_redwood_forest_s = {
+    world_coords: [
+//forest
+    [366, -578],
+    [371, -582],
+    [387, -586],
+    [402, -581],
+    [403, -571],
+    [410, -570],
+//cliffs?
+    [416, -553],
+    [433, -550],
+// end of cliff
+    [435, -544],
+// start of cliff
+    [437, -546],
+// cliff, redwood
+    [438, -554],
+    [447, -554],
+    [466, -522],
+    [477, -514],
+    [503, -489],
+    ],
+    fill: "none",
+    stroke: {color: 'green', width: '1px'}
 };

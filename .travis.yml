@@ -1,0 +1,13 @@
+language: ruby
+before_script:
+    gem install rake
+deploy:
+  provider: s3
+  access_key_id: AKIAIJQJLWYXVYBQ2EXQ
+  secret_access_key:
+    secure: L6LyFPQHH1ymeJqFPw/2h1uSxhkBYTGC5RlA4vuQSPxCzsHCYKCpqK2EVPb2gvqyWPu6dRjoYPURxqkWmXpzc2mbpFOLAtXLlE0LQlFjjit03IdOTf3X2dwT86rnhWOWHRit8fhWc5SRGteMbRdPsqKE3BfXHRXWo2PdBIlkzB6s4/Y2LoezRLYXvmBQSEQMjNDA976YkOVl34LB3mW6huqLi3NfQkRGPwbT8/jjY6cZc76GfwueJ3irJNW0b29fDdrgs3kClzB4tshSEq7RX6dagxOxvskoYkAMDwZluXgveBSQBGrVxtgQBMA39Hkdw/Ko3YfMPwN6StssV9LRTZ7kiRWVaSAaE3TLP+kStyqbj5KRr7EJt8n6tv54JpvsodQGY26cdzdTc/ttBFwX36ehyC7/MYaTJ+U6kSbIsxcQeI3gq8JdJ+ErN6djVCspyfkbGZ1FIfQz6KLpdM/iVoJwpFJ6bvP9eJGTtfFf9kns8nyAOL1gKMRfIVLbH8GhFM2btt3K/bJb3Dkz9DQPBvNeyObE6ql5tLSx++4TqfQmhMw9TdCnUnxh2/zA7fbK1iOBJZu01BvL2VE0hASADS+h4klnfejK3Bj6FK8T21HHuy95b/vd28Yp1mOCt0Z7OPJ3Ba9vLY8lf2MPLT57kuxm+g4UNpCvcr+mb/KZb44=
+  bucket: aws-website-vmap-uan8m
+  skip_cleanup: true
+  region: us-east-1
+  on:
+branch: master

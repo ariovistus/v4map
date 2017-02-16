@@ -1,4 +1,5 @@
 
+var conifer_fill = "#bfcfbf";
 
 var rocky_lake = {
     title: "Rocky Lake",
@@ -178,6 +179,14 @@ var forest_sw_edge1 = {
         [509, 498],
         [507, 492],
         [527, 491],
+    ],
+    fill: "none",
+    stroke: {color: 'green', width: '1px'},
+};
+
+var forest_sw_edge2 = {
+    world_coords: [
+        [527, 491],
         [545, 447],
         [557, 435],
         [555, 406],
@@ -313,13 +322,20 @@ var galli_forest1 = {
         [549, 558],
         [550, 530],
         [541, 496],
+    ],
+    fill: "none",
+    stroke: {color: 'green', width: '1px'}
+};
+
+var galli_forest2 = {
+    world_coords: [
+        [541, 496],
         [563, 489],
         [594, 465],
         [599, 449],
         [607, 444],
         [611, 465],
         [633, 491],
-
         [647, 501],
         [661, 493],
         [671, 484],
@@ -459,3 +475,18 @@ var galli_road2 = {
     fill: "none",
     stroke: {color: 'orange', width: '1px'}
 };
+
+var forest_south_fill = {
+    world_coords: [],
+    fill: conifer_fill,
+    stroke: {color: 'orange', width: '0px'}
+};
+
+(function() {
+    var x = forest_south_fill.world_coords;
+    x.push.apply(x, forest_sw_edge2.world_coords); 
+    x.push.apply(x, south_coast.world_coords); 
+    var y = [].concat(galli_forest2.world_coords);
+    y.reverse();
+    x.push.apply(x, y); 
+})();

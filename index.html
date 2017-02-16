@@ -57,7 +57,7 @@
                 [164, 582],
                 [-557, 152],
                 [-360, 120],
-                [604, -511],
+                [685, -614],
                 [653, 462],
                 [-422, 67],
                 [226, 593],
@@ -84,7 +84,6 @@
 
             var random_road_pts = [
                 [654, 554],
-                [713, -435],
                 [231, 531], // crossroads
                 [516, 174],
                 [487, 505],
@@ -92,11 +91,6 @@
                 [483, 539],
                 [-464, -563],
                 [-478, -578],
-                [669, -566],
-                [632, -536],
-                [618, -509],
-                [672, -634], // crossroads
-                [700, -610],
                 [-722, -565], // crossroads
                 [-713, -530], // crossroads
                 [-727, -473], // crossroads 
@@ -138,12 +132,22 @@
                 var svg = SVG('canvas1').size(WIDTH, WIDTH)
                 var rect = svg.rect(WIDTH, WIDTH).fill('#9db9f9');
 
-                drawPath(svg, coast);
+                drawPath(svg, coast_fill);
                 drawPath(svg, crater);
+                drawPath(svg, iits_redwood_fill);
+                drawPath(svg, iits_redwood_fill2);
+                drawPath(svg, iits_redwood_fill3);
+                drawPath(svg, taco_forest_fill);
+                drawPath(svg, taco_coast);
+                drawPath(svg, forest_south_fill);
+                drawPath(svg, south_coast);
                 drawPath(svg, redwood_outline);
                 drawPath(svg, oakwoods_outline);
                 drawPath(svg, redwood_canyon_outline);
                 drawPath(svg, redwood_canyon2_outline);
+                drawPath(svg, redwood_canyon3_outline);
+                drawPath(svg, redwood_canyon4_outline);
+                drawPath(svg, redwood_canyon_jut);
                 drawPath(svg, boiling_lake_outline);
                 drawPath(svg, taco_lake);
                 drawPath(svg, cypress_outline);
@@ -157,13 +161,22 @@
                 drawPath(svg, redwood_cliff3);
                 drawPath(svg, redwood_cliff4);
                 drawPath(svg, redwood_cliff5);
+                drawPath(svg, cliffs_bazooka);
+                drawPath(svg, edge_zany);
+                drawPath(svg, edge_zany2);
+                drawPath(svg, edge_zany3);
+                drawPath(svg, redwood_3);
+                drawPath(svg, big_lake_forestline);
                 drawPath(svg, pothole_lake);
                 drawPath(svg, big_lake);
                 drawPath(svg, iits_lake_outline);
                 drawPath(svg, iits_cliff);
                 drawPath(svg, another_cliff);
-                drawPath(svg, implied_canyontop);
-                drawPath(svg, implied_canyontop2);
+                drawPath(svg, implied_canyontop_hi1);
+                drawPath(svg, implied_canyontop_hi2);
+                drawPath(svg, implied_canyontop2_1);
+                drawPath(svg, implied_canyontop2_2);
+                drawPath(svg, implied_canyontop2_3);
                 drawPath(svg, sw_canyon_edge1);
                 drawPath(svg, sw_canyon_edge2);
                 drawPath(svg, sw_bridge);
@@ -171,14 +184,17 @@
                 drawPath(svg, cactus_lake);
                 drawPath(svg, box_lake_cliffs);
                 drawPath(svg, forest_sw_edge1);
+                drawPath(svg, forest_sw_edge2);
                 drawPath(svg, taco_forest_edges);
                 drawPath(svg, galli_forest1);
+                drawPath(svg, galli_forest2);
                 drawPath(svg, dryo_grove1);
                 drawPath(svg, cliff_4);
                 drawPath(svg, spino_road);
                 drawPath(svg, taco_road);
                 drawPath(svg, taco_road2);
                 drawPath(svg, taco_road3);
+                drawPath(svg, taco_road4);
                 drawPath(svg, j_road);
                 drawPath(svg, k2_road);
                 drawPath(svg, k3_road);
@@ -188,12 +204,12 @@
                 drawPath(svg, galli_road1);
                 drawPath(svg, galli_road2);
                 drawPath(svg, cliffs_nw_1);
-                drawPath(svg, cliffs_nw_2);
                 drawPath(svg, cliffs_nw_3);
                 drawPath(svg, cliffs_nw_4);
                 drawPath(svg, cliffs_nw_5);
                 drawPath(svg, cliffs_nw_6);
                 drawPath(svg, cliffs_nw_7);
+                drawPath(svg, nw_forestline);
                 drawRoute(svg, box_lake_route);
                 drawRoute(svg, canyon_entrance1_route2);
                 drawRoute(svg, canyon_entrance1_route);

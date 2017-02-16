@@ -1,4 +1,4 @@
-
+var swamp_fill = "#eef9d9";
 
 var boiling_lake_outline = {
     title: "Boiling Lake",
@@ -53,7 +53,7 @@ var cypress_outline = {
         [-17, 386],
         [-15, 417],
     ],
-    fill: "#eef9d9",
+    fill: swamp_fill,
     stroke: {color: 'darkgreen', width: '1px'}
 };
 

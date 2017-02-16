@@ -109,4 +109,63 @@ var dryo_grove1 = {
     ],
     fill: "none",
     stroke: {color: 'green', width: '1px'}
-}
+};
+
+var edge_zany = {
+    world_coords: [
+
+//break
+    [-337, -191],
+    [-332, -199],
+    [-327, -216],
+    [-319, -223],
+    [-315, -235],
+// bye cliffs
+    [-324, -238],
+// hello clilffs
+    [-355, -238],
+    [-364, -237],
+    [-386, -235],
+    [-394, -233],
+    [-401, -225],
+    [-405, -216],
+    [-429, -212],
+// bye cliffs, no longer edge of forest
+],
+    fill: "none",
+    stroke: {color: 'green', width: '1px'}
+};
+
+
+// found edge again
+var edge_zany2 = {
+    world_coords: [
+    [-458, -215],
+    [-456, -193],
+],
+    fill: "none",
+    stroke: {color: 'green', width: '1px'}
+};
+
+
+var edge_zany3 = {
+    world_coords: [
+
+    [-230, -168],
+    [-247, -170],
+    [-252, -172],
+    [-261, -178],
+    [-271, -170],
+    [-268, -178],
+    [-288, -189],
+    [-295, -184],
+    [-311, -187],
+    [-315, -189],
+    [-331, -193],
+    [-335, -189],
+],
+    fill: "none",
+    stroke: {color: 'green', width: '1px'}
+};
+
+

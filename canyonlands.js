@@ -1,4 +1,6 @@
 
+var redwood_fill = "#deb887";
+
 var canyon_lake = {
     title: "Canyon Lake",
     world_coords: [
@@ -80,8 +82,34 @@ var redwood_canyon_outline = {
     stroke: {color: 'gray', width: '1px'}
 };
 
+var redwood_canyon_jut = { 
+    world_coords: [
+        [305, -327],
+        [300, -332],
+        [293, -333],
+        [292, -336],
+        [295, -339],
+        [299, -338],
+        [300, -332],
+    ],
+    fill: "none",
+    stroke: {color: 'gray', width: '1px'}
+};
+
 var redwood_canyon2_outline = {
     world_coords: [
+        [479, -26],
+        [472, -33],
+        [465, -57],
+        [462, -65],
+        [463, -73],
+        [457, -81],
+        [460, -72],
+        [454, -67],
+        [448, -70],
+        [429, -122],
+        [428, -136],
+        [416, -151],
         [392, -156],
         [381, -157],
         [374, -166],
@@ -93,13 +121,6 @@ var redwood_canyon2_outline = {
         [330, -296],
         [342, -314],
         [310, -327],
-        [305, -327],
-        [300, -332],
-        [293, -333],
-        [292, -336],
-        [295, -339],
-        [299, -338],
-        [300, -332],
         [305, -327],
         [312, -338],
         [304, -344],
@@ -138,6 +159,14 @@ var redwood_canyon2_outline = {
         [366, -552],
         [369, -564],
         [366, -579],
+    ],
+    fill: "none",
+    stroke: {color: 'gray', width: '1px'}
+};
+
+var redwood_canyon3_outline = {
+    world_coords: [
+        [366, -579],
         [348, -609],
         [332, -612],
         [323, -608],
@@ -146,6 +175,15 @@ var redwood_canyon2_outline = {
         [262, -617],
         [237, -613],
         [223, -617],
+    ],
+    fill: "none",
+    stroke: {color: 'gray', width: '1px'}
+};
+var redwood_canyon4_outline = {
+    world_coords: [
+        [497, -14],
+        [494, 4],
+        [479, -26],
     ],
     fill: "none",
     stroke: {color: 'gray', width: '1px'}
@@ -452,46 +490,73 @@ var iits_cliff = {
         [254, -204],
         [297, -185],
     ],
-    fill: "lightpink",
+    fill: redwood_fill,
     stroke: {color: 'magenta', width: '1px'}
 };
 
-var implied_canyontop = {
+var implied_canyontop_hi1 = {
     world_coords: [
-        [135, -415],
-        [152, -415],
-        [164, -422],
-        [192, -399],
-        [193, -328],
-        [215, -296],
-        [229, -249],
-        [236, -194], // real data
-        [297, -154],
-        [363, -145],
-        [410, -127],
-        [415, -95],
-        [415, -95],
         [400, -60],
+        [415, -95],
+        [413, -105],
     ],
     fill: "none",
     stroke: {color: 'magenta', width: '1px'}
 };
 
-var implied_canyontop2 = {
+var implied_canyontop_hi2 = {
     world_coords: [
-        [50, -459],
+        [236, -194], // real data
+        [229, -249],
+        [215, -296],
+        [193, -328],
+        [192, -399],
+        [164, -422],
+        [152, -415],
+        [135, -415],
+    ],
+    fill: "none",
+    stroke: {color: 'magenta', width: '1px'}
+};
+
+var implied_canyontop2_1 = {
+    world_coords: [
+        [115, -480], // real
         [83, -478],
-        [134, -470],
-        [143, -457],
-        [153, -457],
-        [223, -533],
+        [50, -459],
+    ],
+    fill: "none",
+    stroke: {color: 'magenta', width: '1px'}
+};
+
+var implied_canyontop2_2 = {
+    world_coords: [
+        [115, -480], // real
+        [121, -477], // real
+        [141, -478], // real
+        [147, -493], // real
+        [186, -496], // real
+        [212, -515], // real
+        [246, -539], // real
+        [262, -540], // real
+        [268, -547], // real
+        [285, -550], // real
         [298, -539],
         [307, -525],
         [342, -531],
-        [348, -583],
+        [348, -586], // real
         [295, -599],
         [214, -598],
         [122, -588],
+        [108, -577],
+    ],
+    fill: "none",
+    stroke: {color: 'magenta', width: '1px'}
+};
+
+var implied_canyontop2_3 = {
+    world_coords: [
+        [108, -577],
         [73, -558],
     ],
     fill: "none",
@@ -500,21 +565,24 @@ var implied_canyontop2 = {
 
 var iits_cliff2 = {
     world_coords: [
-        [392, -156],
-        [416, -151],
-        [428, -136],
-        [429, -122],
-        [448, -70],
-        [454, -67],
-        [460, -72],
-        [457, -81],
-        [463, -73],
-        [462, -65],
-        [465, -57],
-        [472, -33],
-        [479, -26],
-        [494, 4],
-        [497, -14],
+// possible descent
+    //[617, -323],
+
+// clifftop
+        [236, -194], 
+        [277, -168],
+        [287, -165],
+        [312, -165],
+        [340, -153],
+        [345, -150],
+        [359, -147],
+        [376, -144],
+        [400, -143],
+        [411, -137],
+        [414, -131],
+        [413, -118],
+        [414, -106],
+        [411, -112],
 
     ],
     fill: "none",
@@ -540,27 +608,136 @@ var a_route = {
 
 var iits_redwood_forest_s = {
     world_coords: [
-//forest
-    [366, -578],
-    [371, -582],
-    [387, -586],
-    [402, -581],
-    [403, -571],
-    [410, -570],
-//cliffs?
-    [416, -553],
-    [433, -550],
-// end of cliff
-    [435, -544],
-// start of cliff
-    [437, -546],
-// cliff, redwood
-    [438, -554],
-    [447, -554],
-    [466, -522],
-    [477, -514],
-    [503, -489],
+        [366, -579],
+        [371, -582],
+        [387, -586],
+        [402, -581],
+        [403, -571],
+        [410, -570],
+        [416, -553], //cliffs?
+        [433, -550],
+        [435, -544], // end of cliff
+        [437, -546], // start of cliff
+        [438, -554],
+        [447, -554],
+        [466, -522],
+        [477, -514],
+        [503, -489],
+        [529, -473],
+        [541, -470],
+        [547, -456],
+        [549, -431],
+        [552, -419],
+        [559, -412],
+        [591, -404],
+        [602, -380], // start (end) of cliffs
+        [600, -367],
+        [599, -351],
+        [597, -331],
+            [588, -324],
+        // cliffs
+            [583, -316],
+            [563, -313],
+            [552, -317],
+            [563, -305],
+            [566, -297],
+            [573, -275],
+            [577, -273],
+            [594, -268],
+            [600, -260],
+        // redwoods leave cliffs here
+            [598, -253],
+            [590, -251],
+            [576, -260],
+            [567, -254],
+            [570, -244],
+            [582, -237],
+            [585, -226],
+            [582, -213],
+            [568, -196],
+            [555, -191],
+        // hello cliffs
+            [542, -197],
+            [527, -211],
+            [522, -215],
+        // redwoods leave cliffs
+            [527, -201],
+            [532, -191],
+            [536, -178],
+            [547, -158],
+            [556, -154],
+            [564, -135],
+            [561, -112],
+            [555, -106],
+        // possible way down
+            [519, -108],
+            [524, -98],
+            [524, -87],
+            [526, -68],
+            [529, -46],
+            [536, -40],
+            [545, -14],
+            [536, -8],
+            [507, -32],
     ],
     fill: "none",
     stroke: {color: 'green', width: '1px'}
 };
+
+var redwood_3 = {
+    world_coords:[
+        [109, -577],
+        [105, -573],
+        [100, -563],
+        [100, -523],
+        [104, -522],
+        [116, -526],
+        [113, -515],
+        [102, -516],
+        [101, -507],
+        [119, -513],
+        [109, -505],
+        [100, -502],
+        [101, -489],
+        [115, -480],
+    ],
+    fill: "none",
+    stroke: {color: 'green', width: '1px'}
+};
+
+var iits_redwood_fill = {
+    world_coords: [],
+    fill: redwood_fill,
+    stroke: {color: redwood_fill, width: '1px'}
+};
+var iits_redwood_fill2 = {
+    world_coords: [],
+    fill: redwood_fill,
+    stroke: {color: redwood_fill, width: '1px'}
+};
+
+var iits_redwood_fill3 = {
+    world_coords: [],
+    fill: redwood_fill,
+    stroke: {color: redwood_fill, width: '1px'}
+};
+
+(function() {
+    var x = iits_redwood_fill.world_coords;
+    x.push.apply(x, iits_redwood_forest_s.world_coords);
+    x.push.apply(x, redwood_canyon2_outline.world_coords);
+
+    x = iits_redwood_fill2.world_coords;
+    x.push.apply(x, redwood_outline.world_coords);
+    x.push.apply(x, implied_canyontop_hi1.world_coords);
+    var y = [].concat(iits_cliff2.world_coords);
+    y.reverse();
+    x.push.apply(x, y);
+    x.push.apply(x, implied_canyontop_hi2.world_coords);
+
+    var x = iits_redwood_fill3.world_coords;
+    x.push.apply(x, redwood_3.world_coords);
+    x.push.apply(x, implied_canyontop2_2.world_coords);
+})();
+
+

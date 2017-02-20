@@ -1,7 +1,7 @@
 var swamp_fill = "#eef9d9";
 
 var boiling_lake_outline = {
-    title: "Boiling Lake",
+    title: "Herb Lake",
     world_coords: [
         [160, 554],
         [168, 562],

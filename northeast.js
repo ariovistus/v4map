@@ -15,7 +15,7 @@ var z_lake = {
 };
 
 var y_lake = {
-    title: "Y Lake",
+    title: "AFK Lake",
     world_coords: [
         [-551, -276],
         [-539, -279],

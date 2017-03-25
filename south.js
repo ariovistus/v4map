@@ -586,3 +586,23 @@ var shelter_lake_cliffs2 = {
     fill: "none",
     stroke: {color: 'gray', width: '1px'},
 };
+
+
+var scarborough_lake = {
+    title: "??! Lake",
+    world_coords: [
+        [738, -219],
+        [746, -219],
+        [748, -210],
+        [746, -207],
+        [736, -207],
+        [732, -208],
+        [729, -211],
+        [730, -213],
+        [733, -219],
+        [738, -219],
+    ],
+    fill: "skyblue",
+    stroke: {color: 'darkblue', width: '1px'}
+};
+

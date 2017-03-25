@@ -472,17 +472,50 @@ var cliffs_nw_4 = {
 
 var cliff_4 = {
     world_coords: [
+        [-447, -185],
+        [-418, -142],
         [-403, -128],
         [-380, -105],
         [-358, -90],
+        [-335, -84],
         [-321, -57],
         [-313, -48],
         [-298, -9],
     ],
     fill: "none",
     stroke: {color: 'gray', width: '1px'}
-
 }
+
+var cliff_55 = {
+    world_coords: [
+        [-403, -219],
+        [-395, -231],
+        [-394, -234],
+        [-364, -238],
+        [-354, -243],
+        [-347, -244],
+        [-340, -250],
+        [-323, -243],
+        [-318, -237],
+        [-314, -235],
+        [-319, -223],
+    ],
+    fill: "none",
+    stroke: {color: 'gray', width: '1px'}
+
+};
+
+var cliff_56 = {
+    world_coords: [
+        [-458, -193],
+        [-467, -194],
+        [-466, -205],
+        [-456, -229],
+    ],
+    fill: "none",
+    stroke: {color: 'gray', width: '1px'}
+
+};
 
 // cliffs, redwood
 var cliffs_bazooka = {
